@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>きらりんフォトコレクション</title>
+<meta name="description" content="竹内希来里さんの生写真を、シリーズ・カットごとに所持チェックする個人用アプリ（非公式）">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<meta name="format-detection" content="telephone=no">
+<!-- iPhone：ホーム画面に追加したときの表示 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="きらりんフォト">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar" id="topbar">
+  <div class="brand"><span class="star" aria-hidden="true">✦</span> きらりんフォトコレクション</div>
+  <div class="searchwrap" id="searchwrap">
+    <input id="search" type="search" inputmode="search" enterkeyhint="search" autocomplete="off"
+           placeholder="シリーズ名で検索（例：シーラカンス）" aria-label="シリーズ名で検索">
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <p class="loading">読み込み中…</p>
+</main>
+
+<nav class="tabbar" aria-label="メニュー">
+  <a href="#/" data-tab="list"><span aria-hidden="true">▦</span>シリーズ</a>
+  <a href="#/missing" data-tab="missing"><span aria-hidden="true">◌</span>未所持</a>
+  <a href="#/settings" data-tab="settings"><span aria-hidden="true">⚙</span>保存・設定</a>
+</nav>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="dialog"></dialog>
+
+<noscript><p class="loading">JavaScriptを有効にしてください。</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

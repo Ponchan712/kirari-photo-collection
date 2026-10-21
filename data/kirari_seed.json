@@ -1,0 +1,3427 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_title": "竹内希来里 生写真管理 初期シリーズ一覧",
+  "as_of_date": "2026-10-19",
+  "basis": "ユーザー提供一覧。発売実在・収集対象カット数・所持数は原則未確認",
+  "member": {
+    "group": "日向坂46",
+    "generation": "四期生",
+    "name": "竹内希来里"
+  },
+  "counts": {
+    "original_nonempty_lines": 149,
+    "candidate_occurrences_after_splits_and_merges": 150,
+    "unique_candidate_names": 137,
+    "review_items": 27
+  },
+  "series": [
+    {
+      "id": "KIR-001",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2nd アルバム封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        1
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-002",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "7th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        2
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-003",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "8th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        3
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-004",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "9th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        4
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-005",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "10th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        5
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-006",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "11th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        6
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-007",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "12th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        7
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-008",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "13th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        8
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-009",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "14th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        9
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-010",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "15th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        10
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-011",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "16th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        11
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-012",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "17th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        12
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-013",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "18th封入",
+      "category": "CD・アルバム封入",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        13
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-014",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ブルーベリー＆ラズベリー」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        14
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-015",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ブルーベリー＆ラズベリー」MV衣装（制服）",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        15
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-016",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "8th制服",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        16
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-017",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2023年四期生振袖衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        17
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-018",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "9th 制服",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        18
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-019",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "オーディション制服",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        19
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-020",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "花柄コーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        20
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-021",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「シーラカンス」MV衣装（白）",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        21
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-022",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「シーラカンス」MV衣装（青）",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        22
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-023",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「シーラカンス」MV制服",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        23
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-024",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「4回目のひな誕祭」オープニング青衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        24
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-025",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「青春の馬」MVブルーグラデーション衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        25
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-026",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2023年浴衣衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        26
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-027",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Am I ready？」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        27
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-028",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「見たことない魔物」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        28
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-029",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2023年ハロウィン衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        29
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-030",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「キュン」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        30
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-031",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2023年読書コーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        31
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-032",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ネイビーサンタ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        32
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-033",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2024年振袖衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        33
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-034",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "どうぶつ着ぐるみ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        34
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-035",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2024年秋冬私服コーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        35
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-036",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「脈打つ感情」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        36
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-037",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「4回目のひな誕祭」黄色衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        37,
+        38
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-038",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2023年年末歌唱衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        39
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-039",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2024年春私服コーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        40
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-040",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「君はハニーデュー」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        41
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-041",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「雨が降ったって」MV衣装①",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        42
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-042",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「雨が降ったって」MV衣装②",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        43
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-043",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「錆びつかない剣を持て！」MV衣装①",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "連結文字列を2種類に分離",
+      "source_line_numbers": [
+        44
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-044",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「錆びつかない剣を持て！」MV衣装②",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "連結文字列を2種類に分離",
+      "source_line_numbers": [
+        44
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-045",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「僕なんか」歌唱衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        45
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-046",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "Tシャツコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        46
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-047",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "けやき坂46 1stアルバム制服",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        47
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-048",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ひなくり 2020」探検隊衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        48
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-049",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「恋は逃げ足が早い」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        49
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-050",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Happy Smile Tour 2022」オープニング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        50
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-051",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2024年浴衣",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        51
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-052",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「キツネ」歌唱衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        52
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-053",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「W-KEYAKI FES.2022」カラフル衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        53
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-054",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「君を覚えてない」MV衣装①",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        54
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-055",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「君を覚えてない」MV衣装②",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        55
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-056",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2024年ハロウィン衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        56
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-057",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「絶対的第六感」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        57
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-058",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2024年夏フェス衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "原文に同名・同義の記載3回",
+      "source_line_numbers": [
+        58,
+        73,
+        85
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-059",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "日向坂46 空色ジャージ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "表記補正済",
+      "notes": "表記上の空白を整理",
+      "source_line_numbers": [
+        59
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-060",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Happy Train Tour 2023」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        60
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-061",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「11th Single ひなた坂46 LIVE」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        61
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-062",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ロングニットワンピース",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        62
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-063",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「夕陽 Dance」MV衣装①",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "表記補正済",
+      "notes": "空白を整理",
+      "source_line_numbers": [
+        63
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-064",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「夕陽 Dance」MV衣装②",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "表記補正済",
+      "notes": "空白を整理",
+      "source_line_numbers": [
+        64
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-065",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ドレミソラシド」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        65
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-066",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ひなくり 2022」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        66
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-067",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "12th 制服",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        67
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-068",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「3回目のひな誕祭」リメイクモザイク柄衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        68
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-069",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Happy Train Tour 2023」サンタ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        69
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-070",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ねこみみコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        70
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-071",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2025年振袖",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        71
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-072",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "巫女",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        72
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-073",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ひなたフェス 2024」花柄衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        74
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-074",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ホワイトコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        75
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-075",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「卒業写真だけが知ってる」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        76
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-076",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Happy Magical Tour 2024」オープニング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        77
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-077",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "おうちコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "連結の可能性があるため分割（要確認）",
+      "source_line_numbers": [
+        78
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-078",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ニットベストコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "連結の可能性があるため分割（要確認）",
+      "source_line_numbers": [
+        78
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-079",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「足の小指を箪笥の角にぶつけた」MV衣装①",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        79
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-080",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「足の小指を箪笥の角にぶつけた」MV衣装②",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        80
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-081",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2025年浴衣",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        81
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-082",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「2025年カレンダー」スタイリング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        82
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-083",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「SUZUKA」MV衣装①",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        83
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-084",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「SUZUKA」MV衣装②",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        84
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-085",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ひなたフェス 2024」オレンジ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        86
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-086",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「四期生ライブ」衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        87
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-087",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "シャツコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        88
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-088",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「海風とわがまま」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        89
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-089",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「海風とわがまま」MVスタイリング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        90
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-090",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Love yourself！」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "「ジャケ写」を「ジャケット写真」に統一; 原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        91,
+        104
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-091",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "【未確定】Love yourself! MVA#",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "元の文字列が不鮮明。MV衣装か別種類か未確認",
+      "source_line_numbers": [
+        92
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-092",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Love yourself！」MVスタイリング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "連結文字列を分割（要確認）; 原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        93,
+        106
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-093",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "【未確定】読晝コーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "「読書コーデ」の誤読の可能性あり（確定せず）",
+      "source_line_numbers": [
+        94
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-094",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "BRAND NEW LIVE 2025「OVER THE RAINBOW」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "改行・文字化け結合候補。原文の末尾「, 5」の意味を要確認; 改行・文字化け結合候補。原文の末尾「>」の意味を要確認; 原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        95,
+        96,
+        107,
+        108
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-095",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「君しか勝たん」年末歌唱衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        97,
+        109
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-096",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2025年ハロウィン衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        98,
+        110
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-097",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「お願いバッハ！」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "連結文字列を2種類に分離; 原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        99,
+        111
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-098",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「お願いバッハ！」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "連結文字列を2種類に分離; 原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        100,
+        111
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-099",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「お願いバッハ！」MVスタイリング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        101,
+        112
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-100",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「言葉の限界」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        102,
+        113
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-101",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2025年夏フェス衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "重複確認待ち",
+      "notes": "原文に同名・同義の記載2回",
+      "source_line_numbers": [
+        103,
+        114
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-102",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Love yourself！」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        105
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-103",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "読書コーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "連結文字列を分割（要確認）",
+      "source_line_numbers": [
+        106
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-104",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Happy Magical Tour 2024」サンタ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        115
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-105",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "黒ドレス衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        116
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-106",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2026年振袖",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        117
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-107",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Happy Magical Tour 2024」デニム衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        118
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-108",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「2026年カレンダー」スタイリング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        119
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-109",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「クリフハンガー」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "表記補正済",
+      "notes": "日向坂46公式サイトの16thシングル表記と照合して修正",
+      "source_line_numbers": [
+        120
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": "https://www.hinatazaka46.com/s/official/news/detail/R00483"
+    },
+    {
+      "id": "KIR-110",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「君と生きる」MV衣装①",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        121
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-111",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「君と生きる」MV衣装②",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        122
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-112",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "16th制服",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        123
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-113",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「12th Single ひなた坂46 LIVE」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        124
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-114",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「13th Single ひなた坂46 LIVE」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        125
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-115",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2026年バレンタインコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        126
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-116",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「6回目のひな誕祭」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        127
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-117",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ARENA TOUR 2025「MONSTER GROOVE」ライブ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "途中改行を連結",
+      "source_line_numbers": [
+        128,
+        129
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-118",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「JOYFUL LOVE」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        130
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-119",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "パステルコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        131
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-120",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Happy Magical Tour 2024」ストライプ衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        132
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-121",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ヴォヤージュコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        133
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-122",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "横浜DeNAベイスターズユニフォーム",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        134
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-123",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「16th Single ひなた坂46 LIVE」衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        135
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-124",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Empty」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        136
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-125",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「Kind of love」ジャケット写真衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        137
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-126",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "チュールコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        138
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-127",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "BRAND NEW LIVE 2025「OVER THE RAINBOW」オープニング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "確認待ち",
+      "notes": "括弧の開閉を整理（要確認）",
+      "source_line_numbers": [
+        139
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-128",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「6回目のひな誕祭」オープニング衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        140
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-129",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "ひなたフェス2026 ロゴTシャツ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        141
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-130",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "夏フェスコーデ",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        142
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-131",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2026年 浴衣",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        143
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-132",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "2026年ハロウィン",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        144
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-133",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「17th Single ひなた坂46 LIVE」衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        145
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-134",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「風にキンモクセイ」MV衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        146
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-135",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ひなたフェス2026」期別衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        147
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-136",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ひなたフェス2026」水色衣装",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        148
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    },
+    {
+      "id": "KIR-137",
+      "group": "日向坂46",
+      "member": "竹内希来里",
+      "generation": "四期生",
+      "name": "「ひなたフェス2026」浴衣",
+      "category": "衣装・企画生写真",
+      "release_year": null,
+      "target_cut_count": null,
+      "owned_type_count": null,
+      "owned_total_count": null,
+      "status": "未照合",
+      "notes": "",
+      "source_line_numbers": [
+        149
+      ],
+      "source": "ユーザー提供一覧（2026-10-19）",
+      "official_url": null
+    }
+  ],
+  "review_items": [
+    {
+      "line": "44",
+      "original": "「錆びつかない剣を持て！」MV衣装①「錆びつかない剣を持て！」MV衣装②",
+      "candidate": "「錆びつかない剣を持て！」MV衣装① / 「錆びつかない剣を持て！」MV衣装②",
+      "issue": "連結文字列を2種類に分離",
+      "importance": "確認推奨"
+    },
+    {
+      "line": "59",
+      "original": "日向坂 46空色ジャージ",
+      "candidate": "日向坂46 空色ジャージ",
+      "issue": "表記上の空白を整理",
+      "importance": "表記補正"
+    },
+    {
+      "line": "63",
+      "original": "「夕陽 Dance」 MV衣装①",
+      "candidate": "「夕陽 Dance」MV衣装①",
+      "issue": "空白を整理",
+      "importance": "表記補正"
+    },
+    {
+      "line": "64",
+      "original": "「夕陽 Dance」 MV衣装②",
+      "candidate": "「夕陽 Dance」MV衣装②",
+      "issue": "空白を整理",
+      "importance": "表記補正"
+    },
+    {
+      "line": "78",
+      "original": "おうちコーデニットベストコーデ",
+      "candidate": "おうちコーデ / ニットベストコーデ",
+      "issue": "連結の可能性があるため分割（要確認）",
+      "importance": "要確認"
+    },
+    {
+      "line": "92",
+      "original": "\"Love yourself! MVA#",
+      "candidate": "【未確定】Love yourself! MVA#",
+      "issue": "元の文字列が不鮮明。MV衣装か別種類か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "94",
+      "original": "読晝コーデ",
+      "candidate": "【未確定】読晝コーデ",
+      "issue": "「読書コーデ」の誤読の可能性あり（確定せず）",
+      "importance": "要確認"
+    },
+    {
+      "line": "95,96",
+      "original": "BRAND NEW LIVE 2025 OVER THE RAINBOW, 5 / イブ衣装",
+      "candidate": "BRAND NEW LIVE 2025「OVER THE RAINBOW」ライブ衣装",
+      "issue": "改行・文字化け結合候補。原文の末尾「, 5」の意味を要確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "104",
+      "original": "「Love yourself！」ジャケ写衣装",
+      "candidate": "「Love yourself！」ジャケット写真衣装",
+      "issue": "「ジャケ写」を「ジャケット写真」に統一",
+      "importance": "表記補正"
+    },
+    {
+      "line": "106",
+      "original": "「Love yourself！」MVスタイリング衣装読書コーデ",
+      "candidate": "「Love yourself！」MVスタイリング衣装 / 読書コーデ",
+      "issue": "連結文字列を分割（要確認）",
+      "importance": "要確認"
+    },
+    {
+      "line": "107,108",
+      "original": "BRAND NEW LIVE 2025 OVER THE RAINBOW> / イブ衣装",
+      "candidate": "BRAND NEW LIVE 2025「OVER THE RAINBOW」ライブ衣装",
+      "issue": "改行・文字化け結合候補。原文の末尾「>」の意味を要確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "111",
+      "original": "「お願いバッハ！」ジャケット写真衣装「お願いバッハ！」MV衣装",
+      "candidate": "「お願いバッハ！」ジャケット写真衣装 / 「お願いバッハ！」MV衣装",
+      "issue": "連結文字列を2種類に分離",
+      "importance": "確認推奨"
+    },
+    {
+      "line": "120",
+      "original": "「グリフハンガー」ジャケット写真衣装",
+      "candidate": "「クリフハンガー」ジャケット写真衣装",
+      "issue": "日向坂46公式サイトの16thシングル表記と照合して修正",
+      "importance": "表記補正"
+    },
+    {
+      "line": "128,129",
+      "original": "ARENA TOUR 2025「MONSTER GROOVE」ライブ / 衣装",
+      "candidate": "ARENA TOUR 2025「MONSTER GROOVE」ライブ衣装",
+      "issue": "途中改行を連結",
+      "importance": "確認推奨"
+    },
+    {
+      "line": "139",
+      "original": "BRAND NEW LIVE 2025 OVER THE RAINBOW」オープニング衣装",
+      "candidate": "BRAND NEW LIVE 2025「OVER THE RAINBOW」オープニング衣装",
+      "issue": "括弧の開閉を整理（要確認）",
+      "importance": "要確認"
+    },
+    {
+      "line": "37,38",
+      "original": "「4回目のひな誕祭」黄色衣装",
+      "candidate": "「4回目のひな誕祭」黄色衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "58,73,85",
+      "original": "2024年夏フェス衣装",
+      "candidate": "2024年夏フェス衣装",
+      "issue": "同じ候補が3回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "91,104",
+      "original": "「Love yourself！」ジャケット写真衣装 / 「Love yourself！」ジャケ写衣装",
+      "candidate": "「Love yourself！」ジャケット写真衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "93,106",
+      "original": "「Love yourself！」MVスタイリング衣装 / 「Love yourself！」MVスタイリング衣装読書コーデ",
+      "candidate": "「Love yourself！」MVスタイリング衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "95,96,107,108",
+      "original": "BRAND NEW LIVE 2025 OVER THE RAINBOW, 5 / イブ衣装 / BRAND NEW LIVE 2025 OVER THE RAINBOW> / イブ衣装",
+      "candidate": "BRAND NEW LIVE 2025「OVER THE RAINBOW」ライブ衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "97,109",
+      "original": "「君しか勝たん」年末歌唱衣装",
+      "candidate": "「君しか勝たん」年末歌唱衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "98,110",
+      "original": "2025年ハロウィン衣装",
+      "candidate": "2025年ハロウィン衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "99,111",
+      "original": "「お願いバッハ！」ジャケット写真衣装 / 「お願いバッハ！」ジャケット写真衣装「お願いバッハ！」MV衣装",
+      "candidate": "「お願いバッハ！」ジャケット写真衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "100,111",
+      "original": "「お願いバッハ！」MV衣装 / 「お願いバッハ！」ジャケット写真衣装「お願いバッハ！」MV衣装",
+      "candidate": "「お願いバッハ！」MV衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "101,112",
+      "original": "「お願いバッハ！」MVスタイリング衣装",
+      "candidate": "「お願いバッハ！」MVスタイリング衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "102,113",
+      "original": "「言葉の限界」MV衣装",
+      "candidate": "「言葉の限界」MV衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    },
+    {
+      "line": "103,114",
+      "original": "2025年夏フェス衣装",
+      "candidate": "2025年夏フェス衣装",
+      "issue": "同じ候補が2回出現。コピー重複か別商品か未確認",
+      "importance": "要確認"
+    }
+  ],
+  "raw_entries": [
+    {
+      "line_no": 1,
+      "raw_name": "2nd アルバム封入"
+    },
+    {
+      "line_no": 2,
+      "raw_name": "7th封入"
+    },
+    {
+      "line_no": 3,
+      "raw_name": "8th封入"
+    },
+    {
+      "line_no": 4,
+      "raw_name": "9th封入"
+    },
+    {
+      "line_no": 5,
+      "raw_name": "10th封入"
+    },
+    {
+      "line_no": 6,
+      "raw_name": "11th封入"
+    },
+    {
+      "line_no": 7,
+      "raw_name": "12th封入"
+    },
+    {
+      "line_no": 8,
+      "raw_name": "13th封入"
+    },
+    {
+      "line_no": 9,
+      "raw_name": "14th封入"
+    },
+    {
+      "line_no": 10,
+      "raw_name": "15th封入"
+    },
+    {
+      "line_no": 11,
+      "raw_name": "16th封入"
+    },
+    {
+      "line_no": 12,
+      "raw_name": "17th封入"
+    },
+    {
+      "line_no": 13,
+      "raw_name": "18th封入"
+    },
+    {
+      "line_no": 14,
+      "raw_name": "「ブルーベリー＆ラズベリー」MV衣装"
+    },
+    {
+      "line_no": 15,
+      "raw_name": "「ブルーベリー＆ラズベリー」MV衣装（制服）"
+    },
+    {
+      "line_no": 16,
+      "raw_name": "8th制服"
+    },
+    {
+      "line_no": 17,
+      "raw_name": "2023年四期生振袖衣装"
+    },
+    {
+      "line_no": 18,
+      "raw_name": "9th 制服"
+    },
+    {
+      "line_no": 19,
+      "raw_name": "オーディション制服"
+    },
+    {
+      "line_no": 20,
+      "raw_name": "花柄コーデ"
+    },
+    {
+      "line_no": 21,
+      "raw_name": "「シーラカンス」MV衣装（白）"
+    },
+    {
+      "line_no": 22,
+      "raw_name": "「シーラカンス」MV衣装（青）"
+    },
+    {
+      "line_no": 23,
+      "raw_name": "「シーラカンス」MV制服"
+    },
+    {
+      "line_no": 24,
+      "raw_name": "「4回目のひな誕祭」オープニング青衣装"
+    },
+    {
+      "line_no": 25,
+      "raw_name": "「青春の馬」MVブルーグラデーション衣装"
+    },
+    {
+      "line_no": 26,
+      "raw_name": "2023年浴衣衣装"
+    },
+    {
+      "line_no": 27,
+      "raw_name": "「Am I ready？」ジャケット写真衣装"
+    },
+    {
+      "line_no": 28,
+      "raw_name": "「見たことない魔物」MV衣装"
+    },
+    {
+      "line_no": 29,
+      "raw_name": "2023年ハロウィン衣装"
+    },
+    {
+      "line_no": 30,
+      "raw_name": "「キュン」MV衣装"
+    },
+    {
+      "line_no": 31,
+      "raw_name": "2023年読書コーデ"
+    },
+    {
+      "line_no": 32,
+      "raw_name": "ネイビーサンタ衣装"
+    },
+    {
+      "line_no": 33,
+      "raw_name": "2024年振袖衣装"
+    },
+    {
+      "line_no": 34,
+      "raw_name": "どうぶつ着ぐるみ"
+    },
+    {
+      "line_no": 35,
+      "raw_name": "2024年秋冬私服コーデ"
+    },
+    {
+      "line_no": 36,
+      "raw_name": "「脈打つ感情」ジャケット写真衣装"
+    },
+    {
+      "line_no": 37,
+      "raw_name": "「4回目のひな誕祭」黄色衣装"
+    },
+    {
+      "line_no": 38,
+      "raw_name": "「4回目のひな誕祭」黄色衣装"
+    },
+    {
+      "line_no": 39,
+      "raw_name": "2023年年末歌唱衣装"
+    },
+    {
+      "line_no": 40,
+      "raw_name": "2024年春私服コーデ"
+    },
+    {
+      "line_no": 41,
+      "raw_name": "「君はハニーデュー」ジャケット写真衣装"
+    },
+    {
+      "line_no": 42,
+      "raw_name": "「雨が降ったって」MV衣装①"
+    },
+    {
+      "line_no": 43,
+      "raw_name": "「雨が降ったって」MV衣装②"
+    },
+    {
+      "line_no": 44,
+      "raw_name": "「錆びつかない剣を持て！」MV衣装①「錆びつかない剣を持て！」MV衣装②"
+    },
+    {
+      "line_no": 45,
+      "raw_name": "「僕なんか」歌唱衣装"
+    },
+    {
+      "line_no": 46,
+      "raw_name": "Tシャツコーデ"
+    },
+    {
+      "line_no": 47,
+      "raw_name": "けやき坂46 1stアルバム制服"
+    },
+    {
+      "line_no": 48,
+      "raw_name": "「ひなくり 2020」探検隊衣装"
+    },
+    {
+      "line_no": 49,
+      "raw_name": "「恋は逃げ足が早い」MV衣装"
+    },
+    {
+      "line_no": 50,
+      "raw_name": "「Happy Smile Tour 2022」オープニング衣装"
+    },
+    {
+      "line_no": 51,
+      "raw_name": "2024年浴衣"
+    },
+    {
+      "line_no": 52,
+      "raw_name": "「キツネ」歌唱衣装"
+    },
+    {
+      "line_no": 53,
+      "raw_name": "「W-KEYAKI FES.2022」カラフル衣装"
+    },
+    {
+      "line_no": 54,
+      "raw_name": "「君を覚えてない」MV衣装①"
+    },
+    {
+      "line_no": 55,
+      "raw_name": "「君を覚えてない」MV衣装②"
+    },
+    {
+      "line_no": 56,
+      "raw_name": "2024年ハロウィン衣装"
+    },
+    {
+      "line_no": 57,
+      "raw_name": "「絶対的第六感」ジャケット写真衣装"
+    },
+    {
+      "line_no": 58,
+      "raw_name": "2024年夏フェス衣装"
+    },
+    {
+      "line_no": 59,
+      "raw_name": "日向坂 46空色ジャージ"
+    },
+    {
+      "line_no": 60,
+      "raw_name": "「Happy Train Tour 2023」ライブ衣装"
+    },
+    {
+      "line_no": 61,
+      "raw_name": "「11th Single ひなた坂46 LIVE」ライブ衣装"
+    },
+    {
+      "line_no": 62,
+      "raw_name": "ロングニットワンピース"
+    },
+    {
+      "line_no": 63,
+      "raw_name": "「夕陽 Dance」 MV衣装①"
+    },
+    {
+      "line_no": 64,
+      "raw_name": "「夕陽 Dance」 MV衣装②"
+    },
+    {
+      "line_no": 65,
+      "raw_name": "「ドレミソラシド」MV衣装"
+    },
+    {
+      "line_no": 66,
+      "raw_name": "「ひなくり 2022」ライブ衣装"
+    },
+    {
+      "line_no": 67,
+      "raw_name": "12th 制服"
+    },
+    {
+      "line_no": 68,
+      "raw_name": "「3回目のひな誕祭」リメイクモザイク柄衣装"
+    },
+    {
+      "line_no": 69,
+      "raw_name": "「Happy Train Tour 2023」サンタ衣装"
+    },
+    {
+      "line_no": 70,
+      "raw_name": "ねこみみコーデ"
+    },
+    {
+      "line_no": 71,
+      "raw_name": "2025年振袖"
+    },
+    {
+      "line_no": 72,
+      "raw_name": "巫女"
+    },
+    {
+      "line_no": 73,
+      "raw_name": "2024年夏フェス衣装"
+    },
+    {
+      "line_no": 74,
+      "raw_name": "「ひなたフェス 2024」花柄衣装"
+    },
+    {
+      "line_no": 75,
+      "raw_name": "ホワイトコーデ"
+    },
+    {
+      "line_no": 76,
+      "raw_name": "「卒業写真だけが知ってる」ジャケット写真衣装"
+    },
+    {
+      "line_no": 77,
+      "raw_name": "「Happy Magical Tour 2024」オープニング衣装"
+    },
+    {
+      "line_no": 78,
+      "raw_name": "おうちコーデニットベストコーデ"
+    },
+    {
+      "line_no": 79,
+      "raw_name": "「足の小指を箪笥の角にぶつけた」MV衣装①"
+    },
+    {
+      "line_no": 80,
+      "raw_name": "「足の小指を箪笥の角にぶつけた」MV衣装②"
+    },
+    {
+      "line_no": 81,
+      "raw_name": "2025年浴衣"
+    },
+    {
+      "line_no": 82,
+      "raw_name": "「2025年カレンダー」スタイリング衣装"
+    },
+    {
+      "line_no": 83,
+      "raw_name": "「SUZUKA」MV衣装①"
+    },
+    {
+      "line_no": 84,
+      "raw_name": "「SUZUKA」MV衣装②"
+    },
+    {
+      "line_no": 85,
+      "raw_name": "2024年夏フェス衣装"
+    },
+    {
+      "line_no": 86,
+      "raw_name": "「ひなたフェス 2024」オレンジ衣装"
+    },
+    {
+      "line_no": 87,
+      "raw_name": "「四期生ライブ」衣装"
+    },
+    {
+      "line_no": 88,
+      "raw_name": "シャツコーデ"
+    },
+    {
+      "line_no": 89,
+      "raw_name": "「海風とわがまま」MV衣装"
+    },
+    {
+      "line_no": 90,
+      "raw_name": "「海風とわがまま」MVスタイリング衣装"
+    },
+    {
+      "line_no": 91,
+      "raw_name": "「Love yourself！」ジャケット写真衣装"
+    },
+    {
+      "line_no": 92,
+      "raw_name": "\"Love yourself! MVA#"
+    },
+    {
+      "line_no": 93,
+      "raw_name": "「Love yourself！」MVスタイリング衣装"
+    },
+    {
+      "line_no": 94,
+      "raw_name": "読晝コーデ"
+    },
+    {
+      "line_no": 95,
+      "raw_name": "BRAND NEW LIVE 2025 OVER THE RAINBOW, 5"
+    },
+    {
+      "line_no": 96,
+      "raw_name": "イブ衣装"
+    },
+    {
+      "line_no": 97,
+      "raw_name": "「君しか勝たん」年末歌唱衣装"
+    },
+    {
+      "line_no": 98,
+      "raw_name": "2025年ハロウィン衣装"
+    },
+    {
+      "line_no": 99,
+      "raw_name": "「お願いバッハ！」ジャケット写真衣装"
+    },
+    {
+      "line_no": 100,
+      "raw_name": "「お願いバッハ！」MV衣装"
+    },
+    {
+      "line_no": 101,
+      "raw_name": "「お願いバッハ！」MVスタイリング衣装"
+    },
+    {
+      "line_no": 102,
+      "raw_name": "「言葉の限界」MV衣装"
+    },
+    {
+      "line_no": 103,
+      "raw_name": "2025年夏フェス衣装"
+    },
+    {
+      "line_no": 104,
+      "raw_name": "「Love yourself！」ジャケ写衣装"
+    },
+    {
+      "line_no": 105,
+      "raw_name": "「Love yourself！」MV衣装"
+    },
+    {
+      "line_no": 106,
+      "raw_name": "「Love yourself！」MVスタイリング衣装読書コーデ"
+    },
+    {
+      "line_no": 107,
+      "raw_name": "BRAND NEW LIVE 2025 OVER THE RAINBOW>"
+    },
+    {
+      "line_no": 108,
+      "raw_name": "イブ衣装"
+    },
+    {
+      "line_no": 109,
+      "raw_name": "「君しか勝たん」年末歌唱衣装"
+    },
+    {
+      "line_no": 110,
+      "raw_name": "2025年ハロウィン衣装"
+    },
+    {
+      "line_no": 111,
+      "raw_name": "「お願いバッハ！」ジャケット写真衣装「お願いバッハ！」MV衣装"
+    },
+    {
+      "line_no": 112,
+      "raw_name": "「お願いバッハ！」MVスタイリング衣装"
+    },
+    {
+      "line_no": 113,
+      "raw_name": "「言葉の限界」MV衣装"
+    },
+    {
+      "line_no": 114,
+      "raw_name": "2025年夏フェス衣装"
+    },
+    {
+      "line_no": 115,
+      "raw_name": "「Happy Magical Tour 2024」サンタ衣装"
+    },
+    {
+      "line_no": 116,
+      "raw_name": "黒ドレス衣装"
+    },
+    {
+      "line_no": 117,
+      "raw_name": "2026年振袖"
+    },
+    {
+      "line_no": 118,
+      "raw_name": "「Happy Magical Tour 2024」デニム衣装"
+    },
+    {
+      "line_no": 119,
+      "raw_name": "「2026年カレンダー」スタイリング衣装"
+    },
+    {
+      "line_no": 120,
+      "raw_name": "「グリフハンガー」ジャケット写真衣装"
+    },
+    {
+      "line_no": 121,
+      "raw_name": "「君と生きる」MV衣装①"
+    },
+    {
+      "line_no": 122,
+      "raw_name": "「君と生きる」MV衣装②"
+    },
+    {
+      "line_no": 123,
+      "raw_name": "16th制服"
+    },
+    {
+      "line_no": 124,
+      "raw_name": "「12th Single ひなた坂46 LIVE」ライブ衣装"
+    },
+    {
+      "line_no": 125,
+      "raw_name": "「13th Single ひなた坂46 LIVE」ライブ衣装"
+    },
+    {
+      "line_no": 126,
+      "raw_name": "2026年バレンタインコーデ"
+    },
+    {
+      "line_no": 127,
+      "raw_name": "「6回目のひな誕祭」ライブ衣装"
+    },
+    {
+      "line_no": 128,
+      "raw_name": "ARENA TOUR 2025「MONSTER GROOVE」ライブ"
+    },
+    {
+      "line_no": 129,
+      "raw_name": "衣装"
+    },
+    {
+      "line_no": 130,
+      "raw_name": "「JOYFUL LOVE」MV衣装"
+    },
+    {
+      "line_no": 131,
+      "raw_name": "パステルコーデ"
+    },
+    {
+      "line_no": 132,
+      "raw_name": "「Happy Magical Tour 2024」ストライプ衣装"
+    },
+    {
+      "line_no": 133,
+      "raw_name": "ヴォヤージュコーデ"
+    },
+    {
+      "line_no": 134,
+      "raw_name": "横浜DeNAベイスターズユニフォーム"
+    },
+    {
+      "line_no": 135,
+      "raw_name": "「16th Single ひなた坂46 LIVE」衣装"
+    },
+    {
+      "line_no": 136,
+      "raw_name": "「Empty」MV衣装"
+    },
+    {
+      "line_no": 137,
+      "raw_name": "「Kind of love」ジャケット写真衣装"
+    },
+    {
+      "line_no": 138,
+      "raw_name": "チュールコーデ"
+    },
+    {
+      "line_no": 139,
+      "raw_name": "BRAND NEW LIVE 2025 OVER THE RAINBOW」オープニング衣装"
+    },
+    {
+      "line_no": 140,
+      "raw_name": "「6回目のひな誕祭」オープニング衣装"
+    },
+    {
+      "line_no": 141,
+      "raw_name": "ひなたフェス2026 ロゴTシャツ"
+    },
+    {
+      "line_no": 142,
+      "raw_name": "夏フェスコーデ"
+    },
+    {
+      "line_no": 143,
+      "raw_name": "2026年 浴衣"
+    },
+    {
+      "line_no": 144,
+      "raw_name": "2026年ハロウィン"
+    },
+    {
+      "line_no": 145,
+      "raw_name": "「17th Single ひなた坂46 LIVE」衣装"
+    },
+    {
+      "line_no": 146,
+      "raw_name": "「風にキンモクセイ」MV衣装"
+    },
+    {
+      "line_no": 147,
+      "raw_name": "「ひなたフェス2026」期別衣装"
+    },
+    {
+      "line_no": 148,
+      "raw_name": "「ひなたフェス2026」水色衣装"
+    },
+    {
+      "line_no": 149,
+      "raw_name": "「ひなたフェス2026」浴衣"
+    }
+  ]
+}
