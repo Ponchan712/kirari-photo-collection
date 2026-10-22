@@ -339,7 +339,7 @@ function renderSettings() {
         シリーズ候補 ${app.series.length}件 × ${CUT_COUNT}種類（${CUTS.map((c) => c.label).join('・')}）＝ ${t.total}種類。${esc(app.seed.basis ?? '')}<br>
         発売年は元データにないため、年代の絞り込みは元データに発売年がある場合だけ表示されます。</p>
     </div>
-    <p class="foot">きらりんフォトコレクション Web版 v1.3<br>
+    <p class="foot">きらりんフォトコレクション Web版 v1.4<br>
       非公式の個人用アプリです。日向坂46運営・メンバー本人とは関係ありません。</p>
   </div>`;
 }
