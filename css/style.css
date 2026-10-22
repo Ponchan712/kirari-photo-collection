@@ -85,6 +85,12 @@ main {
 .stat .v { font-size: 24px; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.3; }
 .stat .v.unset { font-size: 18px; color: var(--muted); }
 .stat .l { font-size: 12px; color: var(--muted); }
+.stat.overall { margin-bottom: 10px; background: linear-gradient(125deg, #def3ff, #f6fbff 60%, #edf9f7); border-color: #cce9f9; }
+.stat.overall .v { font-size: 34px; color: var(--blue); }
+.stat.overall .v small { font-size: 18px; margin-left: 2px; }
+.stat.overall .bar { margin: 4px 0 6px; height: 10px; background: #fff; }
+.cardrate { margin-top: 4px; }
+.card.complete .rate, .panel .complete-badge + .rate { color: var(--ok); }
 .note { background: var(--sky); border-radius: 14px; padding: 11px 13px; font-size: 13px; line-height: 1.6; margin: 10px 0; }
 .note.warn { background: var(--warn-bg); color: var(--warn); }
 .mini { font-size: 13px; color: var(--muted); }
@@ -132,7 +138,6 @@ h1.title { font-size: 21px; line-height: 1.4; margin: 6px 0 8px; word-break: bre
 .back { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; text-decoration: none; }
 .panel { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin-top: 10px; }
 .rate { font-size: 15px; font-weight: 800; color: var(--blue); }
-.rate.unset { color: var(--warn); }
 .cutlist { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
 .cut {
   display: flex; align-items: center; gap: 12px; width: 100%; min-height: 64px; padding: 10px 14px;
