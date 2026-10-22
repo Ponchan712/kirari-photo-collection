@@ -339,7 +339,7 @@ function renderSettings() {
         シリーズ候補 ${app.series.length}件 × ${CUT_COUNT}種類（${CUTS.map((c) => c.label).join('・')}）＝ ${t.total}種類。${esc(app.seed.basis ?? '')}<br>
         発売年は元データにないため、年代の絞り込みは元データに発売年がある場合だけ表示されます。</p>
     </div>
-    <p class="foot">きらりんフォトコレクション Web版 v1.4<br>
+    <p class="foot">きらりんフォトコレクション Web版 v1.4.1<br>
       非公式の個人用アプリです。日向坂46運営・メンバー本人とは関係ありません。</p>
   </div>`;
 }
@@ -450,7 +450,10 @@ function render() {
   $('#searchwrap').classList.toggle('hidden', r.view !== 'list');
   document.querySelectorAll('.tabbar a').forEach((a) => {
     const tab = a.dataset.tab;
-    a.classList.toggle('active', tab === r.view || (tab === 'list' && r.view === 'series'));
+    const active = tab === r.view || (tab === 'list' && r.view === 'series');
+    a.classList.toggle('active', active);
+    if (active) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
   });
   if (r.view === 'list') renderList();
   else if (r.view === 'series') renderSeries(r.id);

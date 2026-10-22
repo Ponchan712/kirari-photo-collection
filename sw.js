@@ -2,7 +2,7 @@
 // 方針：通信できるときは常に最新のファイルを使い（network-first）、
 // 通信できない・遅いときは保存済みのコピーで表示する。
 // 所持データはIndexedDBにあり、ここでは扱わない（キャッシュ削除でも消えない）。
-const VERSION = 'v1.4.0';
+const VERSION = 'v1.4.1';
 const CACHE = `kirari-${VERSION}`;
 const CORE = [
   './',

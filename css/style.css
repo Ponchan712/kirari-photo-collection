@@ -26,7 +26,7 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
-  --tabbar-h: 60px;
+  --tabbar-h: 64px;
   color-scheme: light;
 }
 
@@ -81,12 +81,20 @@ main {
   padding: 0 var(--safe-right) var(--safe-bottom) var(--safe-left);
 }
 .tabbar a {
-  flex: 1; min-height: var(--tabbar-h); display: flex; flex-direction: column; align-items: center; justify-content: center;
-  text-decoration: none; color: var(--muted); font-size: 12px; font-weight: 700; gap: 1px;
+  flex: 1 1 0; min-width: 0; min-height: var(--tabbar-h); padding: 6px 2px 5px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  text-decoration: none; color: var(--muted); /* 非選択：落ち着いたブラウン */
 }
-.tabbar a span { font-size: 19px; line-height: 1.1; }
+.tabbar .ico {
+  display: flex; align-items: center; justify-content: center; width: 58px; height: 30px; border-radius: 99px;
+  transition: background-color .15s;
+}
+.tabbar .ico svg { width: 24px; height: 24px; display: block; }
+.tabbar .label { font-size: 12px; font-weight: 700; line-height: 1.2; letter-spacing: .02em; white-space: nowrap; }
+/* 選択中：淡い黄色の背景に赤いアイコン */
 .tabbar a.active { color: var(--red); }
-.tabbar a.active span { background: var(--yellow); border-radius: 99px; padding: 0 16px; }
+.tabbar a.active .ico { background: var(--yellow); }
+.tabbar a.active .ico svg { stroke-width: 2.3; }
 
 /* ---------- 共通 ---------- */
 .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 12px; }
