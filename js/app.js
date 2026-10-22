@@ -128,7 +128,8 @@ function renderList() {
   main.innerHTML = `
     ${showInstall ? `<div class="note">📱 Safariの共有ボタン（□↑）→「ホーム画面に追加」で、アプリのように使えます。<a href="#/settings">くわしく</a>
       <button class="btn small" data-act="hide-install" style="margin-left:6px">閉じる</button></div>` : ''}
-    ${app.migratedNow ? `<div class="note">✓ 4カット方式（ヨリ・チュウ・ヒキ・座り）に移行しました。これまでの所持チェックは引き継いでいます。${app.migratedNow.legacy.length ? `<br>4カット以外のカット ${app.migratedNow.legacy.length}件は削除せず保管しています（集計対象外）。<a href="#/settings">確認する</a>` : ''}</div>` : ''}
+    ${app.migratedNow?.fourCut ? `<div class="note">✓ 4カット方式（ヨリ・チュウ・ヒキ・座り）に移行しました。これまでの所持チェックは引き継いでいます。${app.migratedNow.fourCut.legacy.length ? `<br>4カット以外のカット ${app.migratedNow.fourCut.legacy.length}件は削除せず保管しています（集計対象外）。<a href="#/settings">確認する</a>` : ''}</div>` : ''}
+    ${app.migratedNow?.renumber ? `<div class="note">✓ シリーズを整理し、番号を KIR-001〜KIR-${String(app.series.length).padStart(3, '0')} に振り直しました。所持チェックは新しい番号へ引き継いでいます。${app.migratedNow.renumber.archived.length ? `<br>一覧から外したシリーズの所持情報 ${app.migratedNow.renumber.archived.length}件は削除せず保管しています。` : ''}<a href="#/settings">くわしく</a></div>` : ''}
     ${app.saveBlocked ? '<div class="note warn">⚠ 移行前のデータを保管できなかったため、保存を止めています。「保存・設定」からバックアップを作成してください。</div>' : ''}
     <div class="stat overall">
       <div class="l">全体コンプリート率</div>
@@ -226,6 +227,36 @@ function legacyReport() {
   return rows;
 }
 
+/** シリーズ整理（削除・移動・番号の振り直し）の説明と、移行の記録 */
+function reorganizationPanel() {
+  const org = app.seed.reorganization;
+  if (!org) return '';
+  const rn = app.state.renumber;
+  const archived = Object.entries(app.state.archived ?? {});
+  const changed = Object.entries(app.idMap).filter(([o, n]) => o !== n);
+  const ownedText = (o) => CUTS.filter((c) => o?.[c.key] === true).map((c) => c.label).join('・') || '所持チェックなし';
+  return `<div class="panel" id="reorganization">
+    <h3>シリーズの整理と番号の振り直し（${esc(app.seed.reorganized_at ?? '')}）</h3>
+    <p class="mini">
+      ・一覧から外したシリーズ：${org.removed.map((r) => `旧${esc(r.former_id)}「${esc(r.name)}」`).join('、')}<br>
+      ・「${esc(org.moved.name)}」（旧${esc(org.moved.former_id)}）を旧${esc(org.moved.to_position_of)}の位置へ移動し、${esc(org.moved.new_id)} にしました。<br>
+      ・並び順どおりに KIR-001〜KIR-${String(app.series.length).padStart(3, '0')}（${app.series.length}件）へ振り直しました。全体の対象は ${app.series.length * CUT_COUNT}種類です。
+    </p>
+    ${rn ? `<p class="mini">${esc(new Date(rn.at).toLocaleString('ja-JP'))}に、この端末の所持チェックを新しい番号へ移しました（所持チェックのあるシリーズのうち、番号が変わったもの ${rn.moved}件）。
+      ${rn.merged.map((m) => `${m.from.map((f) => `旧${esc(f)}`).join('と')} の所持チェックは ${esc(m.to)} に統合しました（「所持」を優先）。`).join('')}</p>` : ''}
+    ${archived.length ? `<p class="mini"><strong>一覧から外したシリーズの所持情報（集計対象外・保管のみ）</strong></p>
+      ${archived.map(([oid, a]) => `<div class="editrow"><span class="label">旧${esc(oid)} ${esc(org.removed.find((r) => r.former_id === oid)?.name ?? '')}<br>
+        <small class="mini">${esc(ownedText(a.owned))}${a.legacy?.length ? `／移行前のカット：${a.legacy.map((c) => `${esc(c.label)}（${c.owned ? '所持' : '未所持'}）`).join('、')}` : ''}</small></span></div>`).join('')}` : ''}
+    <details style="margin-top:8px"><summary class="mini">旧番号 → 新番号の対応表（${changed.length}件）</summary>
+      <p class="mini">${changed.map(([o, n]) => `旧${esc(o)} → ${n ? esc(n) : '（一覧から削除）'}`).join('<br>')}</p>
+    </details>
+    <div class="btns" style="margin-top:10px">
+      ${rn ? '<button class="btn block" data-act="pre-v3">番号振り直し前の所持データをダウンロード</button>' : ''}
+      <a class="btn block" href="data/kirari_seed.json" download="kirari_seed_original_137.json">整理前の初期シリーズデータ（137件）をダウンロード</a>
+    </div>
+  </div>`;
+}
+
 function renderSettings() {
   const t = totals(app.series, app.state);
   const saved = app.lastSavedAt ?? app.state.updatedAt;
@@ -243,7 +274,7 @@ function renderSettings() {
       ・大切なデータを守るため、ときどき下の「バックアップを作成」を行ってください。
       ${persistText ? `<br>・${persistText}` : ''}
     </div>
-    ${app.saveBlocked ? '<div class="note warn">⚠ 4カット方式への移行前のデータを保管できなかったため、保存を止めています。下の「バックアップを作成」で現在の内容を書き出してから、ページを開き直してください。</div>' : ''}
+    ${app.saveBlocked ? '<div class="note warn">⚠ 移行前のデータを保管できなかったため、保存を止めています。下の「バックアップを作成」で現在の内容を書き出してから、ページを開き直してください。</div>' : ''}
     <p class="mini">最終保存：${saved ? esc(new Date(saved).toLocaleString('ja-JP')) : 'まだ保存されていません'}
       ／所持 ${t.owned}／${t.total}種類</p>
 
@@ -258,7 +289,7 @@ function renderSettings() {
 
     <div class="panel">
       <h3>バックアップから復元</h3>
-      <p class="mini">このWeb版（新旧どちらの形式も可）・HTML試作版・Androidアプリ版のJSONバックアップを読み込めます。旧形式は4カット方式へ移行して取り込みます。現在のデータを置き換える前に、確認画面を表示します。</p>
+      <p class="mini">このWeb版（新旧どちらの形式も可）・HTML試作版・Androidアプリ版のJSONバックアップを読み込めます。旧形式・旧シリーズ番号のファイルは、4カット方式・新しい番号へ変換して取り込みます。現在のデータを置き換える前に、確認画面を表示します。</p>
       <label class="btn block filebtn">ファイルを選んで復元<input type="file" id="restore-file" accept=".json,application/json"></label>
       <button class="btn block" data-act="history" style="margin-top:8px">復元前のデータに戻す</button>
     </div>
@@ -271,6 +302,8 @@ function renderSettings() {
         : '<p class="mini">移行できなかったカットはありません。</p>'}
       <button class="btn block" data-act="pre-v2" style="margin-top:10px">移行前のデータをダウンロード</button>
     </div>` : ''}
+
+    ${reorganizationPanel()}
 
     <div class="panel">
       <h3>iPhoneのホーム画面に追加する</h3>
@@ -289,7 +322,7 @@ function renderSettings() {
         シリーズ候補 ${app.series.length}件 × ${CUT_COUNT}種類（${CUTS.map((c) => c.label).join('・')}）＝ ${t.total}種類。${esc(app.seed.basis ?? '')}<br>
         発売年は元データにないため、年代の絞り込みは元データに発売年がある場合だけ表示されます。</p>
     </div>
-    <p class="foot">きらりんフォトコレクション Web版 v1.1<br>
+    <p class="foot">きらりんフォトコレクション Web版 v1.2<br>
       非公式の個人用アプリです。日向坂46運営・メンバー本人とは関係ありません。</p>
   </div>`;
 }
@@ -327,11 +360,11 @@ async function share() {
   download(file);
 }
 
-async function downloadPreV2() {
-  const b = await store.preV2Backup();
+/** 移行前に保管したデータを書き出す（旧形式のままの内容。このファイルからも復元できる） */
+async function downloadPre(tag, prefix) {
+  const b = await store.preBackup(tag);
   if (!b) return toast('移行前のデータは見つかりませんでした');
-  // 旧形式のままの内容（このファイルからも復元できます）
-  download(new File([JSON.stringify(b.state, null, 1)], `kirari_before_4cut_${stamp()}.json`, { type: 'application/json' }), '移行前のデータを書き出しました');
+  download(new File([JSON.stringify(b.state, null, 1)], `${prefix}_${stamp()}.json`, { type: 'application/json' }), '移行前のデータを書き出しました');
 }
 
 async function replaceState(next, reason, message) {
@@ -344,7 +377,7 @@ async function replaceState(next, reason, message) {
 async function restoreFromText(text, fileName) {
   let parsed;
   try {
-    parsed = parseBackup(text, app.series.map((s) => s.id)); // 検証のみ。まだ何も変更しない
+    parsed = parseBackup(text, app.series.map((s) => s.id), app.idMap); // 検証のみ。まだ何も変更しない
   } catch (e) {
     await dialog({ title: '読み込めませんでした', message: `${e.message}\n\n現在のデータは変更していません。`, ok: '閉じる', cancel: null });
     return;
@@ -355,7 +388,8 @@ async function restoreFromText(text, fileName) {
     message: `ファイル：${fileName}\n種類：${parsed.kind}${parsed.exportedAt ? `\n作成日時：${new Date(parsed.exportedAt).toLocaleString('ja-JP')}` : ''}\n` +
       `内容：所持 ${parsed.ownedCount}種類（記録のあるシリーズ ${parsed.seriesCount}件）` +
       `${parsed.legacyCount ? `\n※ 4カット以外のカット ${parsed.legacyCount}件は「移行前のカット」として保管します` : ''}` +
-      `${parsed.skipped ? `\n※ 137シリーズ以外の ${parsed.skipped}件は取り込みません` : ''}\n\n` +
+      `${parsed.archivedCount ? `\n※ 一覧から外したシリーズの所持情報 ${parsed.archivedCount}件は保管します（集計対象外）` : ''}` +
+      `${parsed.skipped ? `\n※ 一覧にないシリーズの ${parsed.skipped}件は取り込みません` : ''}\n\n` +
       `現在のデータ（所持 ${cur.owned}種類）はすべて置き換わります。置き換え前のデータは「復元前のデータに戻す」から戻せます。`,
     ok: '置き換える',
     danger: true,
@@ -371,7 +405,7 @@ async function showHistory() {
     return;
   }
   const h = list[0];
-  const prev = upgradeState(h.state).state; // 古い形式の履歴も4カット方式にそろえる
+  const prev = upgradeState(h.state, app.idMap).state; // 古い形式・旧番号の履歴も最新形式にそろえる
   const ok = await dialog({
     title: '復元前のデータに戻しますか？',
     message: `${new Date(h.at).toLocaleString('ja-JP')}（${h.reason}）の状態\n所持 ${totals(app.series, prev).owned}種類\n\n現在のデータは置き換わります（現在のデータも履歴に残します）。`,
@@ -459,7 +493,10 @@ main.addEventListener('click', async (e) => {
       showHistory();
       break;
     case 'pre-v2':
-      downloadPreV2();
+      downloadPre('pre_v2', 'kirari_before_4cut');
+      break;
+    case 'pre-v3':
+      downloadPre('pre_v3', 'kirari_before_renumber');
       break;
     case 'hide-install':
       sessionStorage.setItem('hideInstall', '1');
@@ -472,21 +509,25 @@ main.addEventListener('click', async (e) => {
 
 async function start() {
   try {
-    const res = await fetch('data/kirari_seed.json');
+    const res = await fetch('data/series.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     app.seed = await res.json();
     app.series = app.seed.series;
     app.byId = new Map(app.series.map((s) => [s.id, s]));
+    app.idMap = app.seed.id_map;
 
     const raw = await store.load();
-    const { state, report } = upgradeState(raw);
-    app.state = state;
-    if (report) {
-      // 旧形式（カット自由設定）からの移行：先に移行前のデータを専用の場所へ保管してから保存する
-      if (await store.savePreV2Backup(raw)) {
-        const r = await store.save(state);
+    const up = upgradeState(raw, app.idMap);
+    app.state = up.state;
+    if (up.fourCut || up.renumber) {
+      // 移行する前に、移行前のデータを上書きされない専用の場所へ保管してから保存する（移行は一度だけ）
+      let kept = true;
+      if (up.fourCut) kept = (await store.savePreBackup('pre_v2', raw)) && kept;
+      if (up.renumber) kept = (await store.savePreBackup('pre_v3', raw)) && kept;
+      if (kept) {
+        const r = await store.save(up.state);
         app.state = r.state;
-        app.migratedNow = report;
+        app.migratedNow = { fourCut: up.fourCut, renumber: up.renumber };
       } else {
         app.saveBlocked = true;
       }

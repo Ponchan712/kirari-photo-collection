@@ -2,7 +2,11 @@
 // 画面（app.js）から切り離し、ブラウザでテストできるようにしている。
 
 export const APP_ID = 'kirari-photo-collection-web';
-export const FORMAT_VERSION = 2;
+/**
+ * 保存形式
+ * 1：カット自由設定（旧）／2：4カット固定・旧シリーズ番号（137件）／3：4カット固定・新シリーズ番号（135件）
+ */
+export const FORMAT_VERSION = 3;
 
 /** 全シリーズ共通の4カット（この順番で固定） */
 export const CUTS = [
@@ -15,13 +19,17 @@ export const CUT_COUNT = CUTS.length;
 const CUT_KEYS = new Set(CUTS.map((c) => c.key));
 
 /**
- * 保存データ（形式2）
+ * 保存データ（形式3）
  * owned[シリーズID][カットのkey] = true/false（記録がなければ未所持）
  * legacy[シリーズID] = [{label, owned}] … 形式1から移行できなかった4カット以外のカット（集計対象外・保管のみ）
- * migration = {from, at, legacyCount} … 形式1から移行した記録
+ * archived[旧シリーズID] = {owned, legacy} … 一覧から削除したシリーズの所持情報（集計対象外・保管のみ）
+ * migration … 形式1→4カット方式の移行記録／renumber … シリーズ番号振り直しの移行記録
  */
 export function emptyState() {
-  return { app: APP_ID, version: FORMAT_VERSION, updatedAt: null, owned: {}, legacy: {}, migration: null };
+  return {
+    app: APP_ID, version: FORMAT_VERSION, updatedAt: null,
+    owned: {}, legacy: {}, archived: {}, migration: null, renumber: null,
+  };
 }
 
 // ---------- 集計 ----------
@@ -39,7 +47,7 @@ export function seriesStats(state, sid) {
   };
 }
 
-/** 全体の集計。分母はシリーズ数×4（137シリーズなら548） */
+/** 全体の集計。分母はシリーズ数×4（135シリーズなら540） */
 export function totals(seriesList, state) {
   let owned = 0, complete = 0;
   for (const s of seriesList) {
@@ -82,7 +90,7 @@ export function toggleOwned(state, sid, key) {
   return { ...state, owned: { ...state.owned, [sid]: cur } };
 }
 
-// ---------- 形式1（カット自由設定）からの移行 ----------
+// ---------- 形式1（カット自由設定）→ 4カット方式 ----------
 
 /** カット名が4カットのどれかなら、そのkeyを返す（表記の全角/半角・前後の空白は同一視） */
 export function cutKeyOf(label) {
@@ -91,11 +99,11 @@ export function cutKeyOf(label) {
 }
 
 /**
- * 形式1の records（{シリーズID: {cuts:[{label, owned}]}}）を形式2へ移す。
+ * 形式1の records（{シリーズID: {cuts:[{label, owned}]}}）を4カット方式（旧シリーズ番号のまま）へ移す。
  * 4カットと同じ名前の所持チェックはそのまま引き継ぎ、それ以外のカットは削除・付け替えせず legacy に保管する。
  */
 export function migrateRecords(records) {
-  const st = emptyState();
+  const st = { ...emptyState(), version: 2 };
   const report = { series: 0, carried: 0, legacy: [] };
   for (const [sid, rec] of Object.entries(records ?? {})) {
     const cuts = Array.isArray(rec?.cuts) ? rec.cuts : [];
@@ -119,21 +127,73 @@ export function migrateRecords(records) {
   return { state: st, report };
 }
 
+// ---------- シリーズ番号の振り直し（旧ID → 新ID） ----------
+
 /**
- * 保存データを最新形式にそろえる。
- * 形式1なら移行し、report（移行内容）を返す。最新形式ならそのまま（reportはnull）。
+ * 旧シリーズ番号のデータを新しい番号へ移す。
+ * idMap[旧ID] = 新ID（削除したシリーズは null）。
+ * - 同じ新IDへ統合されるシリーズ（旧KIR-093＋旧KIR-103）は、カットごとに「所持」を優先して統合
+ * - 削除したシリーズの所持情報は、ほかへ割り当てず archived に保管
+ * - 対応表にない旧IDも捨てずに archived に保管
  */
-export function upgradeState(raw) {
-  if (!raw || raw.app !== APP_ID) return { state: emptyState(), report: null };
+export function renumberState(oldState, idMap) {
+  const st = { ...emptyState(), legacy: {}, migration: oldState.migration ?? null };
+  const report = { at: new Date().toISOString(), moved: 0, merged: [], archived: [], unknown: [] };
+  const sources = {}; // 新ID → 旧IDの一覧（統合の記録用）
+  const ids = new Set([...Object.keys(oldState.owned ?? {}), ...Object.keys(oldState.legacy ?? {})]);
+  for (const oldId of ids) {
+    const owned = oldState.owned?.[oldId] ?? {};
+    const legacy = oldState.legacy?.[oldId] ?? [];
+    const has = Object.prototype.hasOwnProperty.call(idMap, oldId);
+    const newId = has ? idMap[oldId] : null;
+    if (!newId) {
+      st.archived[oldId] = { owned: { ...owned }, legacy: legacy.map((c) => ({ ...c })), reason: has ? 'removed' : 'unknown' };
+      (has ? report.archived : report.unknown).push(oldId);
+      continue;
+    }
+    (sources[newId] ??= []).push(oldId);
+    const cur = (st.owned[newId] ??= {});
+    for (const [k, v] of Object.entries(owned)) {
+      if (CUT_KEYS.has(k)) cur[k] = cur[k] === true || v === true;
+    }
+    if (!Object.keys(cur).length) delete st.owned[newId];
+    if (legacy.length) {
+      const list = (st.legacy[newId] ??= []);
+      for (const c of legacy) {
+        if (!list.some((x) => x.label === c.label && x.owned === c.owned)) list.push({ ...c });
+      }
+    }
+    if (oldId !== newId) report.moved++;
+  }
+  for (const [newId, from] of Object.entries(sources)) {
+    if (from.length > 1) report.merged.push({ to: newId, from: from.sort() });
+  }
+  // 既に保管していた削除済みシリーズの情報は引き継ぐ
+  for (const [k, v] of Object.entries(oldState.archived ?? {})) st.archived[k] ??= v;
+  st.renumber = { from: 2, at: report.at, moved: report.moved, merged: report.merged, archived: [...report.archived, ...report.unknown] };
+  return { state: st, report };
+}
+
+/**
+ * 保存データを最新形式（形式3）にそろえる。
+ * 返り値の fourCut／renumber は、それぞれの移行を行ったときだけ内容が入る（それ以外は null）。
+ */
+export function upgradeState(raw, idMap) {
+  const none = { state: emptyState(), fourCut: null, renumber: null };
+  if (!raw || raw.app !== APP_ID) return none;
   if (raw.version === FORMAT_VERSION && raw.owned && typeof raw.owned === 'object') {
-    return { state: { ...emptyState(), ...raw, legacy: raw.legacy ?? {} }, report: null };
+    return { state: { ...emptyState(), ...raw, legacy: raw.legacy ?? {}, archived: raw.archived ?? {} }, fourCut: null, renumber: null };
   }
-  if (raw.records && typeof raw.records === 'object') {
-    const r = migrateRecords(raw.records);
-    r.state.updatedAt = raw.updatedAt ?? null;
-    return r;
+  let v2 = null, fourCut = null;
+  if (raw.version === 2 && raw.owned && typeof raw.owned === 'object') {
+    v2 = raw;
+  } else if (raw.records && typeof raw.records === 'object') {
+    ({ state: v2, report: fourCut } = migrateRecords(raw.records));
   }
-  return { state: emptyState(), report: null };
+  if (!v2) return none;
+  const { state, report } = renumberState(v2, idMap);
+  state.updatedAt = raw.updatedAt ?? null;
+  return { state, fourCut, renumber: report };
 }
 
 // ---------- バックアップ ----------
@@ -143,13 +203,16 @@ export function exportBackup(state, seed) {
     {
       app: APP_ID,
       version: FORMAT_VERSION,
+      idScheme: seed?.id_scheme ?? 2,
       exportedAt: new Date().toISOString(),
       member: seed?.member ?? null,
       seriesCount: seed?.series?.length ?? null,
       cuts: CUTS.map((c) => c.label),
       owned: state.owned,
       legacy: state.legacy,
+      archived: state.archived,
       migration: state.migration,
+      renumber: state.renumber,
     },
     null,
     1,
@@ -158,10 +221,11 @@ export function exportBackup(state, seed) {
 
 /**
  * バックアップファイルを読み込み、検証する（この時点では保存データを変更しない）。
- * 対応形式：このWeb版（形式2・形式1）／HTML試作版／Androidアプリ版
+ * 対応形式：このWeb版（形式3・形式2・形式1）／HTML試作版／Androidアプリ版
+ * 旧シリーズ番号のファイルは [idMap] で新しい番号へ変換する。
  * 失敗時は Error（日本語メッセージ）を投げる。
  */
-export function parseBackup(text, knownIds) {
+export function parseBackup(text, knownIds, idMap) {
   let raw;
   try {
     raw = JSON.parse(text);
@@ -171,24 +235,28 @@ export function parseBackup(text, knownIds) {
   if (!raw || typeof raw !== 'object') throw new Error('対応していないファイルです。');
   const known = new Set(knownIds);
   let state, kind;
+  const renumber = (v2) => renumberState(v2, idMap).state;
 
   if (raw.app === APP_ID && raw.version === FORMAT_VERSION) {
     kind = 'このWeb版のバックアップ';
-    state = validateV2(raw);
+    state = validateOwned(raw);
+  } else if (raw.app === APP_ID && raw.version === 2) {
+    kind = 'このWeb版のバックアップ（旧シリーズ番号→新番号へ変換）';
+    state = renumber(validateOwned(raw));
   } else if (raw.app === APP_ID) {
-    kind = 'このWeb版の旧形式バックアップ（4カット方式へ移行）';
-    state = migrateRecords(validateV1(raw.records)).state;
+    kind = 'このWeb版の旧形式バックアップ（4カット方式・新番号へ変換）';
+    state = renumber(migrateRecords(validateV1(raw.records)).state);
   } else if (raw.app === 'kirari-photocollection' || (raw.version === 1 && raw.collection)) {
-    kind = 'HTML試作版のバックアップ（4カット方式へ移行）';
-    state = migrateRecords(validateV1(fromHtmlPrototype(raw.app ? raw.data : raw))).state;
+    kind = 'HTML試作版のバックアップ（4カット方式・新番号へ変換）';
+    state = renumber(migrateRecords(validateV1(fromHtmlPrototype(raw.app ? raw.data : raw))).state);
   } else if (raw.app === 'kirari-photo-collection' && raw.tables) {
-    kind = 'Androidアプリ版のバックアップ（4カット方式へ移行）';
-    state = migrateRecords(validateV1(fromFlutterApp(raw.tables))).state;
+    kind = 'Androidアプリ版のバックアップ（4カット方式・新番号へ変換）';
+    state = renumber(migrateRecords(validateV1(fromFlutterApp(raw.tables))).state);
   } else {
     throw new Error('きらりんフォトコレクションのバックアップではありません。');
   }
 
-  // 137シリーズ以外（自分で追加したシリーズ等）は取り込まない
+  // 一覧にないシリーズ（自分で追加したシリーズ等）は取り込まない
   let skipped = 0;
   for (const part of ['owned', 'legacy']) {
     for (const sid of Object.keys(state[part])) {
@@ -206,33 +274,45 @@ export function parseBackup(text, knownIds) {
     seriesCount: Object.keys(state.owned).length,
     ownedCount,
     legacyCount,
+    archivedCount: Object.keys(state.archived).length,
     skipped,
     exportedAt: raw.exportedAt ?? raw.exported_at ?? null,
   };
 }
 
-function validateV2(raw) {
+/** 形式2・3のバックアップの検証（owned・legacy・archived） */
+function validateOwned(raw) {
   const bad = () => { throw new Error('バックアップの中身が壊れています。'); };
   const isObj = (v) => v && typeof v === 'object' && !Array.isArray(v);
-  if (!isObj(raw.owned)) bad();
-  const st = emptyState();
-  for (const [sid, o] of Object.entries(raw.owned)) {
+  const ownedMap = (o) => {
     if (!isObj(o)) bad();
     const clean = {};
     for (const [k, v] of Object.entries(o)) {
       if (!CUT_KEYS.has(k) || typeof v !== 'boolean') bad();
       clean[k] = v;
     }
-    st.owned[sid] = clean;
-  }
-  if (raw.legacy !== undefined && raw.legacy !== null) {
+    return clean;
+  };
+  const legacyList = (list) => {
+    if (!Array.isArray(list) || list.some((c) => !c || typeof c.label !== 'string' || typeof c.owned !== 'boolean')) bad();
+    return list.map((c) => ({ label: c.label, owned: c.owned }));
+  };
+  if (!isObj(raw.owned)) bad();
+  const st = emptyState();
+  for (const [sid, o] of Object.entries(raw.owned)) st.owned[sid] = ownedMap(o);
+  if (raw.legacy != null) {
     if (!isObj(raw.legacy)) bad();
-    for (const [sid, list] of Object.entries(raw.legacy)) {
-      if (!Array.isArray(list) || list.some((c) => !c || typeof c.label !== 'string' || typeof c.owned !== 'boolean')) bad();
-      st.legacy[sid] = list.map((c) => ({ label: c.label, owned: c.owned }));
+    for (const [sid, list] of Object.entries(raw.legacy)) st.legacy[sid] = legacyList(list);
+  }
+  if (raw.archived != null) {
+    if (!isObj(raw.archived)) bad();
+    for (const [oid, a] of Object.entries(raw.archived)) {
+      if (!isObj(a)) bad();
+      st.archived[oid] = { owned: ownedMap(a.owned ?? {}), legacy: legacyList(a.legacy ?? []), reason: String(a.reason ?? 'removed') };
     }
   }
   st.migration = isObj(raw.migration) ? raw.migration : null;
+  st.renumber = isObj(raw.renumber) ? raw.renumber : null;
   return st;
 }
 
@@ -276,7 +356,6 @@ export class Store {
   constructor(name = 'kirari_photo_collection') {
     this.name = name;
     this.lsKey = name + '__state';
-    this.lsPreV2 = name + '__pre_v2_backup';
     this._db = null;
   }
 
@@ -327,7 +406,8 @@ export class Store {
     const ok = (s) => s && s.app === APP_ID && ((s.owned && typeof s.owned === 'object') || (s.records && typeof s.records === 'object'));
     const cands = [fromIdb, fromLs].filter(ok);
     if (!cands.length) return null;
-    cands.sort((a, b) => String(b.updatedAt ?? '').localeCompare(String(a.updatedAt ?? '')));
+    // 同じ日時なら新しい形式を優先
+    cands.sort((a, b) => String(b.updatedAt ?? '').localeCompare(String(a.updatedAt ?? '')) || (b.version ?? 0) - (a.version ?? 0));
     return cands[0];
   }
 
@@ -345,26 +425,29 @@ export class Store {
   }
 
   /**
-   * 4カット方式へ移行する前のデータを、上書きされない専用の場所に保管する。
+   * 移行する前のデータを、上書きされない専用の場所に保管する（tag：'pre_v2'＝4カット化前、'pre_v3'＝番号振り直し前）。
    * すでに保管済みなら最初のものを残す。どちらか一方でも保管できれば true。
    */
-  async savePreV2Backup(raw) {
+  async savePreBackup(tag, raw) {
+    const key = `${tag}_backup`;
     const entry = { at: new Date().toISOString(), state: raw };
-    let idb = (await this._get('pre_v2_backup')) !== undefined;
-    if (!idb) idb = await this._put('pre_v2_backup', entry);
+    let idb = (await this._get(key)) !== undefined;
+    if (!idb) idb = await this._put(key, entry);
     let ls = false;
     try {
-      if (!localStorage.getItem(this.lsPreV2)) localStorage.setItem(this.lsPreV2, JSON.stringify(entry));
+      const lsKey = `${this.name}__${key}`;
+      if (!localStorage.getItem(lsKey)) localStorage.setItem(lsKey, JSON.stringify(entry));
       ls = true;
     } catch {}
     return idb || ls;
   }
 
-  async preV2Backup() {
-    const fromIdb = await this._get('pre_v2_backup');
+  async preBackup(tag) {
+    const key = `${tag}_backup`;
+    const fromIdb = await this._get(key);
     if (fromIdb) return fromIdb;
     try {
-      return JSON.parse(localStorage.getItem(this.lsPreV2) ?? 'null');
+      return JSON.parse(localStorage.getItem(`${this.name}__${key}`) ?? 'null');
     } catch {
       return null;
     }

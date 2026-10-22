@@ -2,7 +2,7 @@
 // 方針：通信できるときは常に最新のファイルを使い（network-first）、
 // 通信できない・遅いときは保存済みのコピーで表示する。
 // 所持データはIndexedDBにあり、ここでは扱わない（キャッシュ削除でも消えない）。
-const VERSION = 'v1.1.0';
+const VERSION = 'v1.2.0';
 const CACHE = `kirari-${VERSION}`;
 const CORE = [
   './',
@@ -10,6 +10,7 @@ const CORE = [
   './css/style.css',
   './js/app.js',
   './js/core.js',
+  './data/series.json',
   './data/kirari_seed.json',
   './manifest.webmanifest',
   './icons/apple-touch-icon.png',
