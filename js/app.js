@@ -316,13 +316,30 @@ function renderSettings() {
       <p class="mini">${isStandalone ? '✓ いまはホーム画面のアプリとして開いています。' : 'いまはブラウザで開いています。'}一度開けば、電波のない場所でも使えます。</p>
     </div>
 
+    <div class="panel" id="icon-info">
+      <h3>ホーム画面のアイコン</h3>
+      <div class="row" style="align-items:flex-start;gap:14px">
+        <img src="icons/apple-touch-icon-v2.png" width="72" height="72" alt="現在のアイコン" style="border-radius:16px;border:1px solid var(--border);flex:none">
+        <p class="mini" style="margin:0">現在のアイコンです。ホーム画面のアイコンがこの絵になっていれば反映済みです。<br>
+          iPhoneでは、すでにホーム画面に追加したアプリのアイコンは自動で変わらないことがあります（iOSの仕様）。古いアイコンのままでも、アプリの中身と所持データは最新版のまま問題なく使えます。</p>
+      </div>
+      <details style="margin-top:8px"><summary class="mini">新しいアイコンにしたいとき（データを失わない手順）</summary>
+        <ol class="steps">
+          <li>この画面の「バックアップを作成」→「共有メニューから保存」→「"ファイル"に保存」でバックアップを保存する</li>
+          <li><strong>今のアプリは消さずに</strong>、Safariでこのアプリのページを開き、共有ボタン →「ホーム画面に追加」（新しいアイコンのアプリが追加されます）</li>
+          <li>新しく追加したアプリを開き、「バックアップから復元」で手順1のファイルを読み込む（ホーム画面のアプリごとに保存場所が別のため）</li>
+          <li>所持種類数・コンプ率が元のアプリと同じことを確認してから、古いアイコンのアプリを削除する（削除すると古いアプリの中のデータは消えます）</li>
+        </ol>
+      </details>
+    </div>
+
     <div class="panel">
       <h3>収録データ</h3>
       <p class="mini">${esc(app.seed.dataset_title ?? '')}（${esc(app.seed.as_of_date ?? '')}時点）<br>
         シリーズ候補 ${app.series.length}件 × ${CUT_COUNT}種類（${CUTS.map((c) => c.label).join('・')}）＝ ${t.total}種類。${esc(app.seed.basis ?? '')}<br>
         発売年は元データにないため、年代の絞り込みは元データに発売年がある場合だけ表示されます。</p>
     </div>
-    <p class="foot">きらりんフォトコレクション Web版 v1.2<br>
+    <p class="foot">きらりんフォトコレクション Web版 v1.3<br>
       非公式の個人用アプリです。日向坂46運営・メンバー本人とは関係ありません。</p>
   </div>`;
 }
